@@ -1,0 +1,135 @@
+.padding {
+	display: flex;
+	flex-direction: column;
+}
+
+.birthdayText {
+	width: 100%;
+	text-align: left;
+	margin-bottom: 5rem;
+}
+
+.birthdayText h1 {
+	font-family: var(--font-family);
+	font-weight: 800;
+	font-size: 62px;
+	line-height: 75px;
+	letter-spacing: -0.04em;
+}
+
+.blog-container {
+	flex: 1;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 2rem;
+}
+
+.birthday-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--color-footer);
+	padding: 20px;
+	font-family: var(--font-family);
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.campfood-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--color-footer);
+	padding: 20px;
+	font-family: var(--font-family);
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.football-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--color-footer);
+	padding: 20px;
+	font-family: var(--font-family);
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+.pythonProgramming-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: var(--color-footer);
+	padding: 20px;
+	font-family: var(--font-family);
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 40px;
+	color: #ffffff;
+}
+
+@media screen and (max-width: 990px) {
+	.padding {
+		flex-direction: column;
+	}
+	.blog-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+	.blog-container img {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 700px) {
+	.padding {
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.birthdayText h1 {
+		font-size: 46px;
+		line-height: 52px;
+	}
+	.blog-container img {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 550px) {
+	.blog-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+	.birthdayText h1 {
+		font-size: 34px;
+		line-height: 42px;
+	}
+	.blog-container img {
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,84 @@
+.header-container {
+	display: flex;
+}
+
+.header {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	margin-right: 5rem;
+}
+
+.headingH1 {
+	font-family: var(--font-family);
+	font-weight: 100;
+	font-size: 32px;
+	letter-spacing: -0.04em;
+	color: var(--gradient-text);
+}
+
+.pg {
+	font-family: var(--font-family);
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 27px;
+	color: var(--color-text);
+	margin-top: 1.5rem;
+}
+
+.image {
+	width: 500px;
+	height: 300px;
+}
+
+@media screen and (max-width: 1050px) {
+	.header-container {
+		flex-direction: column;
+	}
+
+	.header {
+		margin: 0 0 1rem;
+	}
+	.image {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.gradiient-text {
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.pg {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.image {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.gradiient-text {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.pg {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.image {
+		width: 100%;
+		max-width: 100%;
+		height: auto;
+	}
+}
